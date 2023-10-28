@@ -18,7 +18,6 @@ function Calculator() {
         alert('Input not valid')
       }
     }
-    alert('Provide an input')
   };
 
   return (

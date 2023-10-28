@@ -1,4 +1,4 @@
-button {
+.click-button, .reset-button {
   font-family: Roboto, sans-serif;
   font-weight: bold;
   color: white;
@@ -11,7 +11,7 @@ button {
   font-size: 30px;
 }
 
-button:hover {
+.click-button:hover, .reset-button:hover {
   background-color: #038a52;
 }
 

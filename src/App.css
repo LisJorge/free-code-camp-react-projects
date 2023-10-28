@@ -14,6 +14,8 @@ header{
   font-size: 18px;
   font-weight: bold;
   color: #1b1b33;
+  position: sticky;
+  top: 0;
 }
 
 html,body{
