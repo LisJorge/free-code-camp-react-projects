@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Calculator from './components/calculator/Calculator';
+import CounterUI from './components/counter/CounterInterface';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path ='/'></Route>
         <Route path ='/calculator' element={<Calculator/>} />
-        <Route path ='/counter'/>
+        <Route path ='/counter' element={<CounterUI/>}/>
         <Route path ='/task-app'/>
       </Routes>
     </div>
