@@ -19,13 +19,13 @@ function App() {
       <nav>
         <ul>
           <li>
-            <a href='/'>Calculator</a>
+            <a href='/calculator'>Calculator</a>
           </li>
           <li>
-            <a href='/'>Counter</a>
+            <a href='/counter'>Counter</a>
           </li>
           <li>
-            <a href='/'>Task Manager</a>
+            <a href='/task-app'>Task Manager</a>
           </li>
         </ul>
       </nav>
