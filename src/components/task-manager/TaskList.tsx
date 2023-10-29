@@ -1,30 +1,30 @@
 import Task from './Task';
 import TaskForm from './TaskForm';
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { TaskDto } from './dtos/Task.dto';
 
 function TaskList() {
   const [tasks, setTasks] = useState([]);
   
-  const addTask = (task) => {
+  const addTask = (task: TaskDto) => {
     if(task.text.trim()) {
       const updatedTasks = [task, ...tasks];
       setTasks(updatedTasks);
     }
   }
 
-  const deleteTask = (id) => {
+  const deleteTask = (id: string) => {
     const updatedTasks = tasks.filter((task) => (task.id !== id))
     setTasks(updatedTasks);
   }
 
-  const completeTask = (id) => {
+  const completeTask = (id: string) => {
     const updatedTasks = tasks.map((task) => {
       if(task.id === id){
         task.isDone = !task.isDone;
       }
       return task;
     });
-    console.log(updatedTasks)
     setTasks(updatedTasks);
   };
   

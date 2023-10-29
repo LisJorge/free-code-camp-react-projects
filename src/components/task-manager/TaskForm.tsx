@@ -1,6 +1,7 @@
 import '../../styles/task-manager/TaskForm.css'
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { v4 as uuidV4 }  from 'uuid';
+import { TaskDto } from './dtos/Task.dto';
 
 function TaskForm(props) {
   const [newTextInput, setNewTextInput] = useState('')
@@ -11,7 +12,7 @@ function TaskForm(props) {
 
   const manageSubmit = e => {
     e.preventDefault(); //Avoid to reload page when form is submitted
-    const newTask = {
+    const newTask: TaskDto = {
       id: uuidV4(),
       text: newTextInput,
       isDone: false,

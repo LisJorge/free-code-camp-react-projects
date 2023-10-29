@@ -1,5 +1,4 @@
 import '../../styles/counter/CounterUI.css';
-import logo from '../../static/dummy-img.jpg';
 import Button from './Button';
 import Counter from './Counter';
 import { useState } from 'react';
@@ -16,7 +15,7 @@ function CounterUI() {
   return (
     <div className="CounterUI">
       <div className='logo-container'>
-        <img className='logo-image' src={logo} alt='logo-counter'/>
+        <img className='logo-image' src={require('../../static/dummy-img.jpg')} alt='logo-counter'/>
       </div>
       <div className='main-container'>
         <Counter clicks={numClicks}/>

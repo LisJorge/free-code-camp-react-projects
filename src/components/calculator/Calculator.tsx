@@ -7,7 +7,7 @@ import { evaluate } from 'mathjs';
 function Calculator() {
   const [input, setInput] = useState('');
 
-  const addInput = (newInput) => (setInput(input + newInput));
+  const addInput = (newInput: string) => (setInput(input + newInput));
   const clearInput = () => (setInput(''));
   const getResult = () => {
     if(input){

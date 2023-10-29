@@ -1,9 +1,9 @@
 import '../../styles/calculator/Button.css';
 
-function Button(props){
+function Button(props: any){
 
-  const isOperator = (value) => {
-    const conditions = isNaN(value) && value!== '.' && value!=='=';
+  const isOperator = (value: string) => {
+    const conditions = isNaN(Number(value)) && value!== '.' && value!=='=';
     return conditions;
   }
 
